@@ -16,8 +16,15 @@ public class InfoStudenteController {
 
     @Autowired
     private InfoStudenteService service;
-    
 
+    @PostMapping("/aggiungi")
+    public String aggiungiStudente(@ModelAttribute("studente") InfoStudente studente) {
+    service.salvaStudente(studente);
+    System.out.println("Studente: " + studente.getNome() + " " + studente.getCognome() +
+    ", Età: " + studente.getEta() +
+    ", Hobby: " + studente.getHobby() +
+    ", Status: " + studente.getStatus() + " salvato/a nel DB ");
+    return "redirect:/studenti"; }
 
     // Mostra la form per aggiungere un nuovo studente
     @GetMapping("/aggiungi")
