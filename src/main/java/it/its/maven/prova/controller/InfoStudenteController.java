@@ -27,11 +27,14 @@ public class InfoStudenteController {
     }
 
     // Salva il nuovo studente nel database
-    @PostMapping("/aggiungi")
+        @PostMapping("/aggiungi")
     public String aggiungiStudente(@ModelAttribute("studente") InfoStudente studente) {
-        service.salvaStudente(studente);
-        System.out.println("Studente"+ studente.getNome()+" salvato/a nel DB ");
-        return "redirect:/studenti"; // Dopo il salvataggio, reindirizza alla lista
+    service.salvaStudente(studente);
+    System.out.println("Studente: " + studente.getNome() + " " + studente.getCognome() +
+    ", Età: " + studente.getEta() +
+    ", Hobby: " + studente.getHobby() +
+    ", Status: " + studente.getStatoCivile() + " salvato/a nel DB ");
+    return "redirect:/studenti";// Dopo il salvataggio, reindirizza alla lista
     }
 
     // Mostra la lista degli studenti
@@ -41,6 +44,8 @@ public class InfoStudenteController {
         model.addAttribute("studenti", studenti);
         return "studenti-list"; // Deve corrispondere al file HTML in /templates/
     }
+
+    
     
   
 }
