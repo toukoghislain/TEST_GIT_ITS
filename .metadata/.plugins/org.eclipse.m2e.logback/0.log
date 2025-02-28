@@ -20,3 +20,6 @@
 2025-02-28 15:52:22,523 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2025-02-28 15:52:22,533 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
 2025-02-28 15:52:22,541 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Daniele\eclipse-workspace\prova_git\TEST_GIT_ITS\TEST_GIT_ITS\src\test\resources
+2025-02-28 16:00:07,892 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-02-28 16:00:07,905 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 3 resources from src\main\resources to target\classes
+2025-02-28 16:00:07,918 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\Daniele\eclipse-workspace\prova_git\TEST_GIT_ITS\TEST_GIT_ITS\src\test\resources
