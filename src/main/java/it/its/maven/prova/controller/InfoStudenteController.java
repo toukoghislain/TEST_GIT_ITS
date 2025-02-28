@@ -31,6 +31,7 @@ public class InfoStudenteController {
     public String aggiungiStudente(@ModelAttribute("studente") InfoStudente studente) {
         service.salvaStudente(studente);
         System.out.println("Studente"+ studente.getNome()+" salvato/a nel DB ");
+        System.out.println("Studenti Siete bravissimi e continuate ad andare avanti");
         return "redirect:/studenti"; // Dopo il salvataggio, reindirizza alla lista
     }
 
